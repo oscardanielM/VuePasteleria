@@ -52,6 +52,10 @@ export default {
       margin-top: 5%;
     }
 
+    .marginTop10{
+      margin-top: 10%;
+    }
+
     .marginBottom2{
       margin-bottom: 2%;
     }

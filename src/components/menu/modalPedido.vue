@@ -1,6 +1,6 @@
 <template>
     <div class="modal fade" id="mdPedido" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
             <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
@@ -27,7 +27,7 @@
                                 <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" aria-describedby="basic-addon1">
                             </div>
                         </div>
-                        <div class="col-md-12 marginTop1 marginTop2">
+                        <div class="col-md-12 marginTop5">
                             <h5>Selecciona los sabores que desees</h5>
                         </div>
                         <div class="col-md-12">
@@ -54,6 +54,56 @@
 
                             <input type="checkbox" class="btn-check" id="chekSabor8" autocomplete="off">
                             <label class="labelCheak btn btn-outline-primary col-md-3" for="chekSabor8">Natural</label>
+                        </div>
+                        <div class="col-md-12 marginTop5">
+                            <h5>Escoje los adornos para tu pastel</h5>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="col-md-4">
+                                <h5> 
+                                    Adornos de pasteles (letreros, adorno)
+                                </h5>
+                                <br>
+                                <div class="columsAdornos">
+                                    <input type="checkbox" class="btn-check" id="chekAdF11" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF11">Letrero de Happy Birthday</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF12" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF12">Letrero de felicidades</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF13" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF13">Letrero de aniversario</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF14" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF14">Velas con numero</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> 
+                                    Adornos de pasteles (Dibujos)
+                                    <br><br>
+                                </h5>
+                                <br>
+                                <div class="columsAdornos">
+                                    <input type="checkbox" class="btn-check" id="chekAdF21" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF21">Dibujo mediano de BobEsponja</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF22" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF22">Dibujo grande de Iroman</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF23" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF23">Dibujo chico de un Astronauta</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> 
+                                    Pirotecnia
+                                    <br>
+                                    <br>
+                                </h5>
+                                <br>
+                                <div class="columsAdornos">
+                                    <input type="checkbox" class="btn-check" id="chekAdF31" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF31">Luces</label>
+                                    <input type="checkbox" class="btn-check" id="chekAdF32" autocomplete="off">
+                                    <label class="labelCheak2 btn btn-outline-primary col-md-12" for="chekAdF32">Pistola de confeti</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -89,6 +139,10 @@
     .labelCheak{
         margin: 0.4%;
     }
+
+    .labelCheak2{
+        margin-bottom: 3%;
+    }
     
     .btn-outline-primary{
         color: white;
@@ -112,5 +166,26 @@
 
     .marginTop1{
         margin-top: 1.5%;
+    }
+
+    .columsAdornos{
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 3%;
+    }
+
+    .columsAdornos .btn-outline-primary{
+        color: white;
+        border-color: var(--color3);;
+    }
+
+    .columsAdornos .btn-outline-primary:hover{
+        background-color: var(--color3);
+        color: black;
+    }
+    
+    .columsAdornos .btn-check:active+.btn-outline-primary,.columsAdornos .btn-check:checked+.btn-outline-primary,.columsAdornos .btn-outline-primary.active,.columsAdornos .btn-outline-primary.dropdown-toggle.show,.columsAdornos .btn-outline-primary:active{
+        background-color: var(--color3);
+        color: black;
     }
 </style>
