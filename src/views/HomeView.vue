@@ -2,30 +2,21 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <Slider/>
-            </div>
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-
-            </div>
+            <Presentacion/>
         </div>
     </div>
 </template>
 
 <script>
 
-import Slider from '@/components/home/slider.vue'
+import Presentacion from '@/components/home/Presentacion.vue'
+// import TargetasInfo from '@/components/home/targetasInfo.vue'
 
 export default {
   name: 'Home',
   components: {
-    Slider
+    Presentacion,
+    // TargetasInfo
   }
 }
 </script>

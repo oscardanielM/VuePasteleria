@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticky-top  navbar-expand-lg backColor ">
     <div class="container-fluid">
-      <router-link to="/" class="navbar-brand">Parteleria Vue</router-link>
+      <router-link to="/Home" class="navbar-brand">Parteleria Vue</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -38,3 +38,22 @@ export default {
   name: "NavBar",
 };
 </script>
+
+<style scoped>
+  nav{
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .backColor{
+    background-color: #140822;
+  }
+
+  .backColor a{
+    color: #18F2B2;
+  }
+
+  .router-link-active{
+    color: white !important;
+    font-size: 1.2em;
+  }
+</style>
