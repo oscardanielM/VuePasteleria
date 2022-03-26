@@ -4,18 +4,23 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView
   },
   {
-    path: '/menu',
-    name: 'menu',
+    path: '/Menu',
+    name: 'Menu',
     component: () => import('../views/MenuView.vue')
   },
   {
-    path: '/pedido',
-    name: 'pedido',
+    path: '/Pedido',
+    name: 'Pedido',
     component: () => import('../views/PedidoView.vue')
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: {}
   }
 ]
 

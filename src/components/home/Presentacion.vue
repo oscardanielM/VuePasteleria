@@ -31,25 +31,13 @@ export default {
   
 </style>
 
-<style>
+<style scoped>
   .imgLogoGrande{
     width: 50%;
   }
 
-  .paddin10{
-      padding: 10%  ;
-    }
-
-  .paddin4{
-    padding: 4%  ;
-  }
-
-  .marginTop2{
-    margin-top: 2%;
-  }
-
   .presentaTarget{
-    background-color: #140822;
+    background-color: var(--color2);
   }
 
   .contenedor .presentaTarget{
@@ -59,7 +47,7 @@ export default {
   .btnHacerPedido{
     width: 20%;
     padding: 1%;
-    background-color: #00d100;
+    background-color: var(--color1);
     text-decoration: none;
     color:white;
     border-radius: 10px 10px 10px 10px;

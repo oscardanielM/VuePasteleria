@@ -22,10 +22,10 @@
             <router-link to="/" class="nav-link">Inicio <i class="fas fa-home"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/menu" class="nav-link">Menu</router-link>
+            <router-link to="/Menu" class="nav-link">Menu</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/pedidos" class="nav-link">Pedidos</router-link>
+            <router-link to="/Pedidos" class="nav-link">Pedidos</router-link>
           </li>
         </ul>
       </div>
