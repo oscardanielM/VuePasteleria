@@ -142,7 +142,8 @@ export default createStore({
         checkboxSabores : state.checkboxSabores,
         adorno1 : state.adorno1,
         adorno2 : state.adorno2,
-        adorno3 : state.adorno3
+        adorno3 : state.adorno3,
+        
       }
       console.log(newPedido)
       state.pedidosP.push(newPedido)
