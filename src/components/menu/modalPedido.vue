@@ -151,7 +151,6 @@ export default {
             var chek = document.datosForm.checkSabores;
             chek.forEach(element => {
                 element.checked = false;
-                console.log(element.checked)
             });
         }
     }

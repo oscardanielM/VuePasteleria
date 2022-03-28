@@ -25,7 +25,7 @@
             <router-link to="/Menu" class="nav-link">Menu</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/Pedidos" class="nav-link">Pedidos</router-link>
+            <router-link to="/Pedido" class="nav-link">Pedidos</router-link>
           </li>
         </ul>
       </div>

@@ -59,4 +59,12 @@ export default {
     .marginBottom2{
       margin-bottom: 2%;
     }
+
+    .marginLeft2{
+      margin-left: 2%;
+    }
+
+    .marginBottom10{
+      margin-bottom: 10%;
+    }
 </style>

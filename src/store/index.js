@@ -83,6 +83,8 @@ export default createStore({
         },
       ]
     },
+    pedidosP: [],
+    pedidosR: [],
     txtNombre : "",
     txtTelefono : "",
     txtCorreo : "",
@@ -131,6 +133,20 @@ export default createStore({
       state.adorno1 = []
       state.adorno2 = []
       state.adorno3 = []
+    },
+    agregaNuevoPedido(state) {
+      var newPedido = {
+        nombre : state.txtNombre,
+        telefono : state.txtTelefono,
+        correo : state.txtCorreo,
+        checkboxSabores : state.checkboxSabores,
+        adorno1 : state.adorno1,
+        adorno2 : state.adorno2,
+        adorno3 : state.adorno3
+      }
+      console.log(newPedido)
+      state.pedidosP.push(newPedido)
+      console.log(state.pedidosP)
     }
   },
   //Sirve para hacer modificaciones con codigo asincrono

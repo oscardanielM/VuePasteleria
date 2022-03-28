@@ -50,7 +50,7 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary" data-bs-target="#mdPedido" data-bs-toggle="modal">Revisar pedido</button>
-                <button class="btn btn-primary">Pedir</button>
+                <button v-if="$store.getters.totalPedido > 0 " class="btn btn-primary" v-on:click="realizarPedido()" data-bs-dismiss="modal" aria-label="Close">Pedir</button>
             </div>
             </div>
         </div>
@@ -59,7 +59,18 @@
 
 <script>
 export default {
-    name: "detallePedido"
+    name: "detallePedido",
+    methods : {
+        realizarPedido(){
+            this.$store.commit('agregaNuevoPedido');
+            
+            swal({
+            title: "Excelente!",
+            text: "Su pedido se a realizado!",
+            icon: "success",
+            });
+        }
+    }
 }
 </script>
 
